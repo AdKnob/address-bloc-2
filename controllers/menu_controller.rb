@@ -43,6 +43,7 @@ class MenuController
       puts "Sorry, that is not a valid input"
       main_menu
   end
+end
 
   def view_all_entries
     address_book.entries.each do |entry|
@@ -53,7 +54,6 @@ class MenuController
      system "clear"
      puts "End of entries"
    end
-  end
 
   def create_entry
     system "clear"
