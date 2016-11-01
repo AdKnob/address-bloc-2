@@ -9,7 +9,7 @@ require_relative '../models/address_book'
       expect(entry.email).to eq expected_email
     end
 
-    # ITERATIVE SEARCH
+    # ITERATIVE
     describe "#iterative_search" do
      it "searches AddressBook for a non-existent entry" do
        book.import_from_csv("entries.csv")
@@ -59,7 +59,7 @@ require_relative '../models/address_book'
      end
    end
 
-    # BINARY SEARCH
+    # BINARY 
     describe "#binary_search" do
      it "searches AddressBook for a non-existent entry" do
        book.import_from_csv("entries.csv")
